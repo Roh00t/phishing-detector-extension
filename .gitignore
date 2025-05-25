@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+
+# Node and build tools
+node_modules/
+dist/
+.env
+
+# Logs
+*.log

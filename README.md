@@ -24,4 +24,4 @@ Follow these steps to run the extension locally in Chrome:
 
 Here is a screen recording of the basic skeleton demo of the phishing detection extension in action:
 
-📁 `demo/initial_skeleton_demo/basic_phishing_url_demo.mov`
+<video src="demo/initial_skeleton_demo/basic_phishing_url_demo.mov" controls width="600"></video>
