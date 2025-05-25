@@ -5,11 +5,20 @@ on: [push, pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node.js
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install
-      - run: npm run lint
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./phishing-extension-ui
+
+      - name: Run ESLint
+        run: npm run lint
+        working-directory: ./phishing-extension-ui
