@@ -1,1 +1,1 @@
-# phishing_BE
+# Phishing Detection Browser Extension for personal use
